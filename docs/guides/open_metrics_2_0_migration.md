@@ -603,3 +603,4 @@ In OM 1.0, a Sample in a Metric with the Unknown type could only have a Number v
 Since the Unknown type should not be used in general (it exists for third-party metrics where the type is indeterminate), this is a minor change. It primarily affects ingestors and libraries that need to handle arbitrary Unknown-typed data.
 
 See: [Unknown](../specs/om/open_metrics_spec_2_0.md#unknown) in the OM 2.0 spec.
+
