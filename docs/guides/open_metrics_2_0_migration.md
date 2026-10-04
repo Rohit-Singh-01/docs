@@ -17,7 +17,7 @@ There are also references to the relevant section of the specification if more d
 
 ## Quick Reference
 
-OpenMetrics 2.0 contains many changes. Some of those changes are a loosening of previously-strict requirements, like the way metric names are constructed or character limits. Some of these changes are in service of allowing OpenTelemetry metric data to be encoded in OpenMetrics without violating the specification. Other changes improve scraper (e.g. Prometheus) efficiency and reliablity on various cases. Changes introduce new syntaxes, mostly focused on allowing metric data to be encoded into a single line rather than requiring multiple lines to describe one cohesive piece of information. Lastly, some changes add new features and data types, like Native Histograms.
+OpenMetrics 2.0 contains many changes. Some of those changes are a loosening of previously-strict requirements, like the way metric names are constructed or character limits. Some of these changes are in service of allowing OpenTelemetry metric data to be encoded in OpenMetrics without violating the specification. Other changes improve scraper (e.g. Prometheus) efficiency and reliability on various cases. Changes introduce new syntaxes, mostly focused on allowing metric data to be encoded into a single line rather than requiring multiple lines to describe one cohesive piece of information. Lastly, some changes add new features and data types, like Native Histograms.
 
 | Change                                                                           | 1.0                                      | 2.0                                                | Breaking? |
 | -------------------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------- | --------- |
@@ -603,4 +603,3 @@ In OM 1.0, a Sample in a Metric with the Unknown type could only have a Number v
 Since the Unknown type should not be used in general (it exists for third-party metrics where the type is indeterminate), this is a minor change. It primarily affects ingestors and libraries that need to handle arbitrary Unknown-typed data.
 
 See: [Unknown](../specs/om/open_metrics_spec_2_0.md#unknown) in the OM 2.0 spec.
-
